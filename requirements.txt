@@ -1,0 +1,9 @@
+torchaudio=2.1.0
+torch=2.1.0
+numpy=1.26
+speechbrain=1.0.3
+huggingface_hub==0.19.4
+requests
+ipywidgets
+transformers=4.30.0
+numpy=1.26.4
