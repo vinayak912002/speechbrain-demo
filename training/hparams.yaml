@@ -1,0 +1,22 @@
+sample_rate: 16000
+n_mels: 80
+num_classes: 8
+
+train_csv: ../data/train.csv
+valid_csv: ../data/valid.csv
+checkpoint_dir: ../artifacts/checkpoints
+save_model_path: ../artifacts/exported_models/best_model.pth
+
+model:
+  feat_dim: !ref 80
+  num_classes: !ref 4
+
+optimizer:
+  lr: 0.0005
+
+training:
+  batch_size: 16
+  epochs: 20
+
+loss: !name:speechbrain.nnet.losses.nll_loss
+accuracy: !name:speechbrain.nnet.losses.classification_error
